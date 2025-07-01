@@ -1,0 +1,226 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background: rgb(88, 88, 132);
+}
+body h1{
+    color: white;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    font-weight: bolder;
+}
+.wrap{
+    width: 100%;
+    background-color: rgb(62, 77, 84);
+
+}
+.card{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    opacity: 0.95;
+    display: none;
+}
+.box{
+    background: rgb(8, 50, 59);
+    width: 70%;
+    height: 50%;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+#recordPic{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+table{
+    width: 80%;
+    height: auto;
+    border-collapse: collapse;
+    margin: 0 auto;
+    border: none;
+    box-shadow: 0.5px 1px 3px 10px lightgray;
+}
+table thead tr{
+    background: rgb(99, 66, 66);
+    color: rgb(7, 151, 164);
+    font-size: 23px;
+}
+table tbody tr{
+    background-color: rgb(78, 78, 78);
+    padding: 5px;
+}
+table tbody tr:nth-child(odd) {
+    background-color: lightgray;
+    color: rgb(23, 87, 144);
+    border: none;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: lightslategray;
+    color: rgb(223, 218, 218);
+    border: none;
+}
+table tbody tr td{
+    font-size: 20px;
+    text-align: center;
+    padding-left: 5px;
+}
+#id_column, #pic_column{
+    width: 50px;
+
+}
+#name_column{
+    text-align: left;
+}
+#btn_column{
+    display: flex;
+}
+#actionBtn1{
+    justify-content: center;
+    background-color: rgb(10, 161, 121);
+    color:whitesmoke;
+    padding: 8px;
+    margin: 10px;
+    width:45% ;
+    cursor: pointer;
+    border: none;
+}
+#actionBtn1:hover{
+    justify-content: center;
+    background-color: rgb(9, 119, 141);
+    color:rgb(243, 136, 203);
+    cursor: pointer;
+}
+#actionBtn2{
+    justify-content: center;
+    background-color: rgb(191, 4, 123);
+    color: aquamarine;
+    padding: 8px;
+    margin: 10px;
+    width:45% ;
+    cursor: pointer;
+    border: none;
+}
+#actionBtn2:hover{
+    background-color: rgb(234, 79, 177);
+    color: rgb(12, 129, 90);
+    cursor: pointer;
+}
+.head{
+    width: 50%;
+    margin-left: 110px;
+    padding: 20px;
+    display: flex;
+}
+.head button{
+    margin-left: 10px;
+    height: 35px;
+    border-radius: .5em;
+    font-size: 15px;
+    background: rgb(7, 118, 143);
+    color: rgb(229, 242, 43);
+    cursor: pointer;
+}
+.head button:hover{
+    background-color: rgb(17, 137, 101);
+}
+.head input{
+    height: 35px;
+    border:3px solid rgb(48, 45, 21);
+    border-radius: .5em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+#printBtn{
+    background-color: rgb(26, 74, 151);
+    color: aqua;
+    padding: 8px;
+    border: none;
+    font-size: 17px;
+    position: relative;
+    left: 1200px;
+    bottom: 120px;
+    border-radius: 0.5em;
+    font-family: arial;
+}
+#printBtn:hover{
+    background-color: rgb(126, 185, 38);
+    cursor: pointer;
+    color: gold;
+}
+#box1, #box2{
+    width: 45%;
+    height: 250px;
+    float: right;
+    margin: 10px;
+    margin-right: 27px;
+}
+#box1{
+    display: flex;
+    flex-direction: column;
+
+}
+#box1 input{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 8px;
+    font-size: 15px;
+    border-radius: .5em;
+    border: none;
+}
+#box1 button{
+    padding: 8px;
+    font-size: 15px;
+    margin: 0 auto;
+    margin-left: 15px;
+    position: relative;
+    left: 90px;
+    bottom: 5px;
+    cursor: pointer;
+    background-color: rgb(10, 65, 85);
+    color: whitesmoke;
+}
+#box1 button:hover{
+    background-color: rgb(14, 101, 72);
+}
+#box2{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+    border-right: 5px solid lime;
+}
+#box2 input{
+    background: rgb(176, 235, 176);
+    width: 90%;
+    padding: 10px;
+}
+#box2 img{
+    width: 90%;
+    height: auto;
+    
+    color: rgb(187, 13, 71);
+}
+#logo{
+    width: 150px;
+    margin-bottom: -200px;
+    position: relative;
+    bottom: 210px;
+    right: 10px;
+}

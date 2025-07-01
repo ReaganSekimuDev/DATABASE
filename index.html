@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>STudent DataBase Management System</title>
+</head>
+<body>
+    <h1>Students Data Base Management<br> System</h1> <button id="printBtn" onclick="Print()">Print Table</button>
+    <img src="Pics/dbs.png" id="logo">
+    <div class="wrap">
+        <div class="head">
+            <input type="text" id="searc" placeholder="Q Search a Record">
+            <br>
+            <br>
+            <button onclick="Gen()">Add Record</button>
+        </div>
+        <div class="card">
+            <div class="box">
+                <div id="box1">
+                    <input type="text" id="txt1" placeholder="Your Name">
+                    <input type="text" id="txt2" placeholder="Your Class">
+                    <input type="text" id="txt4" placeholder="Fees Paid">
+                    <input type="date" id="txt3">
+                    <br>
+                    <div id="box3">
+                    <button onclick="Can()">Cancel</button>
+                    <button onclick="Clr()">Clear</button>
+                    <button onclick="Sav()">Save</button>
+                </div>
+                </div>
+                <div id="box2">
+                    <input type="file" onchange="SelectPic(this.files)">
+                    <img src="" id="txt5" alt="Your Photo">
+                </div>
+                
+            </div>
+        </div>
+        <div id="dv">
+            <table >
+                <thead>
+                    <tr>
+                        <th> Picture</th>
+                        <th> Id_No.</th>
+                        <th> Name</th>
+                        <th> Class</th>
+                        <th>Date of Birth</th>
+                        <th>Fees Blc</th>
+                        <th>Action Button</th>
+                    </tr>
+                </thead>
+                <tbody id="tbd">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
